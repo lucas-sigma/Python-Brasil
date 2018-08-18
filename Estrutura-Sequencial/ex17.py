@@ -5,3 +5,12 @@ Informe ao usuário as quantidades de tinta a serem compradas e os respectivos p
     * comprar apenas galões de 3,6 litros;
     * misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 '''
+
+tamanho = int(input('Digite o tamanho em metros quadrados da área: '))
+cobertura = tamanho / 6
+latasMax = cobertura // 18
+latasMin = cobertura // 3.6
+latasMix = 0
+if latasMax < 1:    latasMax = 1
+if latasMin < 1:    latasMin = 1
+if latasMix < 1:    latasMix = 1

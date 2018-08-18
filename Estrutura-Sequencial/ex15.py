@@ -14,3 +14,6 @@ Faça um Programa que pergunte quanto você ganha por hora e o número de horas 
 
 Obs.: Salário Bruto - Descontos = Salário Líquido.
 '''
+valorHora, horasTrabalhadas = float(input('valor da hora: ')), int(input('horas trabalhadas: '))
+salario = valorHora * horasTrabalhadas
+print('Salário: ', salario)
