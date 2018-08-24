@@ -1,4 +1,6 @@
 '''
+Obs: descontos ausentes acrescentados proporcionalmente ao exemplo.
+
 Faça um programa para o cálculo de uma folha de pagamento, sabendo que os descontos são do Imposto de Renda, que depende do salário bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% do Salário Bruto, mas não é descontado (é a empresa que deposita). O Salário Líquido corresponde ao Salário Bruto menos os descontos. O programa deverá pedir ao usuário o valor da sua hora e a quantidade de horas trabalhadas no mês.
     Desconto do IR:
     Salário Bruto até 900 (inclusive) - isento
@@ -13,3 +15,24 @@ Faça um programa para o cálculo de uma folha de pagamento, sabendo que os desc
         Total de descontos              : R$  165,00
         Salário Liquido                 : R$  935,00
 '''
+
+valorHora, horasTrabalhadas = float(input('Valor da Hora: ')), int(input('Horas Trabalhadas no Mês: '))
+salario = valorHora * horasTrabalhadas
+
+if salario <= 900:
+    exibirSalario()
+elif salario > 900 and salario <= 1500:
+    exibirSalario(5)
+elif salario > 1500 and salario <= 2500:
+    exibirSalario(10)
+else:
+    exibirSalario(20)
+
+
+def exibirSalario(irP=0, horasTrabalhadas=horasTrabalhadas, valorHora=valorHora, salario=salario):
+    ir = salario - (irP * salario)
+    ir = salario - ir
+
+    print(f'Salário Bruto: ({horasTrabalhadas} * {valorHora})    : R$ {salario}')
+    print(f'(-) IR ({irP})   : R$ {ir}')
+    print(f'(-) INSS ({})')
