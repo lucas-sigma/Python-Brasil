@@ -1,4 +1,4 @@
-Controle de cotas de disco. A ACME Inc., uma organização com mais de 1500 funcionários, está tendo problemas de espaço em disco no seu servidor de arquivos. Para tentar resolver este problema, o Administrador de Rede precisa saber qual o espaço em disco ocupado pelas contas dos usuários, e identificar os usuários com maior espaço ocupado. Através de um aplicativo baixado da Internet, ele conseguiu gerar o seguinte arquivo, chamado usuarios.txt:
+Controle de cotas de disco. A ACME Inc., uma organização com mais de 1500 funcionários, está tendo problemas de espaço em disco no seu servidor de arquivos. Para tentar resolver este problema, o Administrador de Rede precisa saber qual o espaço em disco ocupado pelas contas dos usuários, e identificar os usuários com maior espaço ocupado. Através de um aplicativo baixado da Internet, ele conseguiu gerar o seguinte arquivo, chamado usuarios.txt:
 
 alexandre       456123789
 anderson        1245698456
@@ -7,7 +7,7 @@ carlos          91257581
 cesar           987458
 rosemary        789456125
 
-    Neste arquivo, o primeiro campo corresponde ao login do usuário e o segundo ao espaço em disco ocupado pelo seu diretório home. A partir deste arquivo, você deve criar um programa que gere um relatório, chamado relatório.txt, no seguinte formato: 
+    Neste arquivo, o primeiro campo corresponde ao login do usuário e o segundo ao espaço em disco ocupado pelo seu diretório home. A partir deste arquivo, você deve criar um programa que gere um relatório, chamado relatório.txt, no seguinte formato: 
 
 ACME Inc.           Uso do espaço em disco pelos usuários
 ------------------------------------------------------------------------
@@ -31,3 +31,15 @@ Espaço médio ocupado: 430,26 MB
     Mostrar apenas os n primeiros em uso, definido pelo usuário;
     Gerar a saída numa página html;
     Criar o programa que lê as pastas e gera o arquivo inicial; 
+
+
+Plano:
+    * Criar template do relatorio;
+    * Fazer leitura unica do arquivo de entrada e armazenar dados em memória;
+    * Fazer funcao de conversao de bytes para megabytes;
+    * Fazer funcao para calculo de percentual de uso;
+
+Opcional:
+    * Ordenar os usuários pelo percentual de espaço ocupado;
+    * Mostrar apenas os n primeiros em uso, definido pelo usuário;
+    * Criar o programa que lê as pastas e gera o arquivo inicial;
