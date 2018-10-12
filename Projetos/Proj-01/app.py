@@ -1,3 +1,10 @@
+def leitura():
+    try:
+        data = open('usuarios.txt', 'r')
+        print(data)
+    except IOError:
+        print('arquivo nao encontrado!')
+
 def formatoRelatorio(arr):
     print('ACME Inc.           Uso do espaço em disco pelos usuários')
     print('------------------------------------------------------------------------')
