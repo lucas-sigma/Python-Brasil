@@ -34,12 +34,12 @@ Espaço médio ocupado: 430,26 MB
 
 
 Plano:
-    * Criar template do relatorio;
-    * Fazer leitura unica do arquivo de entrada e armazenar dados em memória;
-    * Fazer funcao de conversao de bytes para megabytes;
-    * Fazer funcao para calculo de percentual de uso;
+    [x] Criar template do relatorio;
+    [ ] Fazer leitura unica do arquivo de entrada e armazenar dados em memória;
+    [ ] Fazer funcao de conversao de bytes para megabytes;
+    [ ] Fazer funcao para calculo de percentual de uso;
 
 Opcional:
-    * Ordenar os usuários pelo percentual de espaço ocupado;
-    * Mostrar apenas os n primeiros em uso, definido pelo usuário;
-    * Criar o programa que lê as pastas e gera o arquivo inicial;
+    [ ] Ordenar os usuários pelo percentual de espaço ocupado;
+    [ ] Mostrar apenas os n primeiros em uso, definido pelo usuário;
+    [ ] Criar o programa que lê as pastas e gera o arquivo inicial;
